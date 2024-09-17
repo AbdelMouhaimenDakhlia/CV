@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV Abdelmouhaimen Dakhlia</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
     body {
       background-color: #f4f4f9;
@@ -14,7 +15,11 @@
       text-align: center;
       margin-bottom: 40px;
     }
-    .card {
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
       margin-bottom: 20px;
     }
     .icon {
@@ -24,9 +29,21 @@
     .contact-info a {
       text-decoration: none;
       color: #007bff;
+      margin-right: 15px;
     }
     .contact-info a:hover {
       text-decoration: underline;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    .social-icons a {
+      color: #333;
+      margin: 0 10px;
+      font-size: 1.5rem;
+    }
+    .social-icons a:hover {
+      color: #007bff;
     }
   </style>
 </head>
@@ -35,19 +52,20 @@
   <div class="container mt-5">
     <!-- Header Section -->
     <div class="header">
+      <img src="https://github.com/AbdelMouhaimenDakhlia/CV/blob/main/profile-pic2.png" alt="Photo de profil" class="profile-img">
       <h1>Abdelmouhaimen Dakhlia</h1>
       <p class="lead">Étudiant en Business Intelligence</p>
       <p class="contact-info">
-        <i class="bi bi-envelope icon"></i><a href="mailto:abdelmouhaimen.dakhlia@esprit.tn">abdelmouhaimen.dakhlia@esprit.tn</a> |
-        <i class="bi bi-linkedin icon"></i><a href="https://www.linkedin.com/in/MouhaDakhlia">MouhaDakhlia</a> |
-        <i class="bi bi-github icon"></i><a href="https://github.com/AbdelMouhaimenDakhlia">GitHub</a>
+        <a href="mailto:abdelmouhaimen.dakhlia@esprit.tn"><i class="fas fa-envelope icon"></i> Gmail</a>
+        <a href="https://www.linkedin.com/in/MouhaDakhlia"><i class="fab fa-linkedin icon"></i> LinkedIn</a>
+        <a href="https://github.com/AbdelMouhaimenDakhlia"><i class="fab fa-github icon"></i> GitHub</a>
       </p>
     </div>
 
     <!-- Langues Section -->
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title"><i class="bi bi-translate icon"></i>Langues</h5>
+        <h5 class="card-title"><i class="fas fa-language icon"></i>Langues</h5>
         <ul>
           <li>Français : B2</li>
           <li>Anglais : B2</li>
@@ -59,7 +77,7 @@
     <!-- Compétences Section -->
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title"><i class="bi bi-code-slash icon"></i>Compétences</h5>
+        <h5 class="card-title"><i class="fas fa-code icon"></i>Compétences</h5>
         <h6>Langages de programmation :</h6>
         <ul>
           <li>Java, Angular, Symfony, .Net, SpringBoot, SQL, Python, R</li>
@@ -74,7 +92,7 @@
     <!-- Formations Section -->
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title"><i class="bi bi-mortarboard icon"></i>Diplômes et Formations</h5>
+        <h5 class="card-title"><i class="fas fa-graduation-cap icon"></i>Diplômes et Formations</h5>
         <ul>
           <li><strong>INGENIERIE INFORMATIQUE</strong> - Spécialité ERP-BI, Esprit Ariana (2022-présent)</li>
           <li><strong>LICENCE APPLIQUÉE EN TECHNOLOGIES DE L'INFORMATIQUE</strong> - ISET Charguia (2019-2021)</li>
@@ -86,7 +104,7 @@
     <!-- Projets Académiques Section -->
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title"><i class="bi bi-file-earmark-code icon"></i>Projets Académiques</h5>
+        <h5 class="card-title"><i class="fas fa-project-diagram icon"></i>Projets Académiques</h5>
         <ul>
           <li><strong>PI FootiFizz (2024)</strong> - Tableau de bord pour améliorer les performances sportives (ETL, Sélénium, Talend, Postgres, etc.).</li>
           <li><strong>PI Hoptiallo (2023)</strong> - Application multiplateforme pour la gestion des rendez-vous médicaux (Symfony, JavaFx, Codename One).</li>
@@ -97,7 +115,7 @@
     <!-- Stages Section -->
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title"><i class="bi bi-briefcase icon"></i>Stages</h5>
+        <h5 class="card-title"><i class="fas fa-briefcase icon"></i>Stages</h5>
         <ul>
           <li><strong>Stage d'immersion (2023)</strong> chez MEPROSS - Développement Plugin pour REVIT</li>
           <li><strong>Projet de fin d'étude (2021)</strong> chez SAGEMCOM - Système de contrôle des compteurs d’énergie</li>
@@ -105,11 +123,11 @@
         </ul>
       </div>
     </div>
+
   </div>
 
-  <!-- Bootstrap Icons CDN -->
+  <!-- Bootstrap Icons CDN & FontAwesome for icons -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
